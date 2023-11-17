@@ -9,14 +9,17 @@ try{
     if(!fin.is_open()){
         throw 10;
     }
-}
-catch(...){
-    cout<<"error: file not opened"<<endl;
-}
+    else{
 char ch = fin.get();
 while(!fin.eof()){
     cout<<ch;
     ch = fin.get();
 }
+    }
+}
+catch(...){
+    cout<<"error: file not opened"<<endl;
+}
+fin.close();
 return 0;
 }
