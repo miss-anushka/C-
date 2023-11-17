@@ -9,6 +9,11 @@ int main(){
     for(int i = 0; i < a; i++){
         cin>>arr[i];
     };
+    int res = 0;
+    for(int i = 0; i < a; i++){
+        res = res + arr[i];
+    }
+    cout<<"sum is "<<res<<endl;
     cout<<"diplaying array elements"<<endl;
     for(int i = 0; i < a; i++){
         cout<<arr[i]<<endl;
